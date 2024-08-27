@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sitio web desarrolado para completar challenge de Oracle Next Education: Encriptador de texto">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="alura-logo" src="./media/AluraLogo.svg" alt="AluraLogo">
+    </header>
+
+    <main>
+        <section class="encriptedPart">
+            <h1 class="tittle">Encriptador de texto</h1>
+            <textarea class="text-area" cols="30" placeholder="Ingrese el texto aqui..."></textarea>
+
+            <div>
+                <h6 class="info"><img src="./media/zondicons--exclamation-solid.svg" alt="ExclamationIcon"> Solo se
+                    aceptan letras
+                    minúsculas y sin acentos</h6>
+            </div>
+
+            <div class="buttons">
+                <button class="btn-encriptar">Encriptar</button>
+                <button class="btn-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="desencriptedPart">
+
+            <textarea class="message" cols="20" rows="10"></textarea>
+
+            <div >
+                <button class="btn-copy">Copiar</button>
+            </div>
+            <!-- <img src="./media/Muñeco.svg" alt="MuñecoImg"> -->
+
+            <!-- <h2 class="desencriptedTitle">Ningún texto fue encontrado</h2>
+            <p class="desencriptedParagraph">Ingrese el texto que desea encriptar o desencriptar</p> -->
+        </section>
+    </main>
+
+    <!-- <footer>
+        <p>&copy; 2024 Encriptador de Texto. Todos los derechos reservados.</p>
+        <p>Desarrollado por Darwing Mosquera</p>
+    </footer> -->
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
