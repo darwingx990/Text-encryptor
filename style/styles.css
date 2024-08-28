@@ -4,8 +4,6 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
-    /* margin: 0;
-    padding: 0; */
     box-sizing: border-box;
 }
 
@@ -17,12 +15,8 @@
 
 main {
     display: flex;
-    /* align-items: center; */
     margin-bottom: 0.6rem;
     margin-left: 4rem;
-    /* justify-content: center; */
-    /* padding: 20px; */
-    /* border: 2px solid; */
 }
 
 .tittle {
@@ -51,10 +45,8 @@ main {
 .buttons {
     display: flex;
     flex-wrap: wrap;
-    /* border: 2px solid black; */
     gap: 30px;
     font-size: 1rem;
-
 }
 
 .btn-encriptar {
@@ -62,13 +54,10 @@ main {
     color: white;
     border: 1px solid #0a3875;
     border-radius: 24px;
-    /* padding: 10px 20px; */
     font-size: 16px;
     height: 67px;
     cursor: pointer;
     width: 328px;
-    /* margin-left: 30px; */
-
 }
 
 .btn-encriptar:hover {
@@ -80,13 +69,11 @@ main {
     color: #0A3875;
     border: 1px solid #0a3871;
     border-radius: 24px;
-    /* padding: 10px 20px; */
     font-size: 16px;
     height: 67px;
     cursor: pointer;
     width: 328px;
     margin-left: 20px;
-    /* margin-right: 20px; */
 }
 
 .btn-desencriptar:hover {
@@ -106,22 +93,8 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border: none;
-    /* margin-bottom: 40px; */
     margin-left: 6rem;
     position: absolute;
-    /* align-content: center; */
-
-
-    /*  background: white;
-    background-repeat: no-repeat;
-    height: 539px;
-    width: 400px;
-    border-radius: 32px;
-    border: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-left: 6rem;
-    margin-top: 1.25rem;
-    padding-left: 1.25rem; */
 }
 
 .empty-text:focus {
@@ -149,7 +122,6 @@ main {
     color: #0A3875;
     border: 1px solid #0a3871;
     border-radius: 24px;
-    /* padding: 10px 20px; */
     font-size: 16px;
     height: 40px;
     cursor: pointer;
@@ -164,7 +136,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 5px;
-    /* padding: 0.3rem 0; */
     margin-top: auto;
     max-height: 8vh;
 }
