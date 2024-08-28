@@ -2,11 +2,20 @@ const text = document.querySelector(".text-area");
 const message = document.querySelector(".message");
 
 function btnEncripted() {
-    const textEncripted = encripting(text.value);
-    message.value = textEncripted;
+    const textEncripted = encripting(text.placeholder.value);
+    message.placeholder.value = textEncripted;
 
 }
 
+console.log(text.value);
+console.log(text.placeholder.value);
+
+(text.placeholder) = "Hello world";
+
+btnEnc = document.querySelector(".btn-encriptar")
+
+
+console.log(btnEnc);
 function encripting(stringEncripted) {
     let conditions = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
     stringEncripted = stringEncripted.toLowerCase();
