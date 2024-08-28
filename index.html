@@ -23,7 +23,8 @@
     <main>
         <section class="encriptedPart">
             <h1 class="tittle">Encriptador de texto</h1>
-            <textarea class="text-area" cols="30" placeholder="Ingrese el texto aqui..."></textarea>
+            <textarea class="text-area" id="inputText" cols="30" placeholder="Ingrese el texto aqui..."
+                oninput="validateInput()"></textarea>
 
             <div>
                 <h6 class="info"><img src="./media/zondicons--exclamation-solid.svg" alt="ExclamationIcon"> Solo se
@@ -31,8 +32,8 @@
             </div>
 
             <div class="buttons">
-                <button class="btn-encriptar" onclick="btnEncripted()">Encriptar</button>
-                <button class="btn-desencriptar">Desencriptar</button>
+                <button class="btn-encriptar" onclick="encryptText()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="desencryptText()">Desencriptar</button>
             </div>
         </section>
 
