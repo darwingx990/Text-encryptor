@@ -2,8 +2,7 @@
 // To avoid the acents. Let's create this function to delete any acent written.
 function validateInput() {
     let inputText = document.getElementById("inputText").value;
-document.getElementById("inputText").value = inputText.replace(/[^a-z\s]/g, '');
-
+    document.getElementById("inputText").value = inputText.replace(/[^a-z\s]/g, '');
 }
 
 //Function to encrypt the text
@@ -16,6 +15,7 @@ function encryptText() {
         .replace(/o/g, "ober")
         .replace(/u/g, "ufat");
     document.querySelector(".empty-text").innerHTML = encryptedText;
+    document.querySelector(".text-area").value = "";
 }
 
 
@@ -30,35 +30,14 @@ function desencryptText() {
         .replace(/ufat/g, "u");
 
     document.querySelector(".empty-text").innerHTML = decryptedText;
+    document.querySelector(".text-area").value = "";
 }
 
-
-
-
-// function btnEncripted() {
-//     const textEncripted = encripting(text.placeholder.value);
-//     message.placeholder.value = textEncripted;
-
-// }
-
-// console.log(text.value);
-// console.log(text.placeholder.value);
-
-// (text.placeholder) = "Hello world";
-
-// btnEnc = document.querySelector(".btn-encriptar")
-
-
-// // console.log(btnEnc);
-
-// function encripting(stringEncripted) {
-//     let conditions = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
-//     stringEncripted = stringEncripted.toLowerCase();
-
-//     for (let i = 0; i < conditions.length; index++) {
-//         if (stringEncripted.includes(conditions[i][0])) {
-//             stringEncripted = stringEncripted.replaceAll(conditions[i][0], conditions[i][1])
-//             return stringEncripted
-//         }
-//     }
-// }
+//Function to copy the text encrypted or desencrypted
+function copy() {
+    const btnCopy = document.querySelector(".btn-copy");
+    let tectToCopy = document.querySelector(".empty-text").textContent;
+    let textcopied = navigator.clipboard.writeText(tectToCopy);
+    console.log("Hello WQorld");
+    return textcopied
+}
