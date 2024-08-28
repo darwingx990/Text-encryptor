@@ -1,5 +1,5 @@
 
-// To avoid the acents. Let's create this function to delete any acent written.
+// To avoid the acents and Capital letters. We created the next function.
 function validateInput() {
     let inputText = document.getElementById("inputText").value;
     document.getElementById("inputText").value = inputText.replace(/[^a-z\s]/g, '');
